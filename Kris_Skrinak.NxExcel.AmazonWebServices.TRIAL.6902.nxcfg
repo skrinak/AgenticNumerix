@@ -1,0 +1,12 @@
+Version=2.0
+PublicKey=a7BNGMtPebZYcr81
+ConnectionProfile = Numerix {
+    Active=True
+    Urls=https://connect.numerix.com:80/Ils?target=licenseSrv,http://connect2.numerix.com:80/Ils?target=licenseSrv
+}
+
+ProductLicense = NxExcel.AmazonWebServices.TRIAL.6902 {
+    User = FA5E7-4FC7-4D17-4187E
+    Type = trial
+}
+

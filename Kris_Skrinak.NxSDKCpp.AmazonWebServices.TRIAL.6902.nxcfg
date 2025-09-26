@@ -1,0 +1,12 @@
+Version=2.0
+PublicKey=a7BNGMtPebZYcr81
+ConnectionProfile = Numerix {
+    Active=True
+    Urls=https://connect.numerix.com:80/Ils?target=licenseSrv,http://connect2.numerix.com:80/Ils?target=licenseSrv
+}
+
+ProductLicense = NxSDKCpp.AmazonWebServices.TRIAL.6902 {
+    User = C4976-172A-4E41-61978
+    Type = trial
+}
+
