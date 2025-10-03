@@ -5,14 +5,35 @@ Utility scripts, automation tools, and helper scripts for the Numerix Dynamic As
 ## Scripts
 
 ### `architecture_diagram.py`
-Generates AWS architecture diagram using Python diagrams framework.
+Generates detailed AWS architecture diagram using Python diagrams framework.
 
 **Usage:**
 ```bash
 python3 utils/architecture_diagram.py
 ```
 
-**Output:** `numerix_aws_architecture.png` - Visual representation of the entire AWS infrastructure
+**Output:** `Documents/numerix_aws_architecture.png` - Complete AWS infrastructure with all services, VPCs, Lambda functions, and data flows
+
+**Dependencies:**
+```bash
+pip install diagrams
+```
+
+### `agent_architecture_diagram.py`
+Generates high-level agentic AI architecture diagram emphasizing Strands Agents and AWS Bedrock AgentCore.
+
+**Usage:**
+```bash
+python3 utils/agent_architecture_diagram.py
+```
+
+**Output:** `Documents/agentic_architecture_highlevel.png` - Simplified architecture highlighting multi-agent orchestration flow
+
+**Key Components:**
+- 🟢 **Strands Agents**: Multi-agent orchestration with specialized personas
+- 🟡 **AWS Bedrock AgentCore**: AI decision intelligence with Claude 3.5
+- 🔵 **Numerix SDK**: Institutional-grade financial analytics
+- 🔴 **AWS Infrastructure**: Scalable cloud compute and storage
 
 **Dependencies:**
 ```bash

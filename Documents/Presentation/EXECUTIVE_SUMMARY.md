@@ -275,8 +275,8 @@ The methodology is proven, the technology is production-ready, and the business 
 
 ## Contact & Resources
 
-**Technical Documentation**: See NOTEBOOK_EXPLAINED.md for comprehensive analysis
-**Implementation Tasks**: TASKS_AWS_DEPLOYMENT.md and TASKS_REACT_FRONTEND.md
+**Technical Documentation**: See Documents/NOTEBOOK_EXPLAINED.md for comprehensive analysis
+**Implementation Tasks**: Documents/TASKS_AWS_DEPLOYMENT.md and Documents/TASKS_REACT_FRONTEND.md
 **Demo Environment**: Jupyter notebook with interactive optimization examples
 
 **Questions?** Let's discuss how agentic AI can transform your portfolio management process.

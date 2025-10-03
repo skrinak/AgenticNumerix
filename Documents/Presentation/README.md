@@ -15,10 +15,10 @@ This folder contains comprehensive presentation materials for executive briefing
 
 **For Technical Audience**:
 1. Start with `TECHNICAL_ARCHITECTURE.md`
-2. Reference parent directory files:
-   - `../NOTEBOOK_EXPLAINED.md` for detailed analysis
-   - `../TASKS_AWS_DEPLOYMENT.md` for implementation plan
-   - `../TASKS_REACT_FRONTEND.md` for frontend development
+2. Reference Documents directory files:
+   - `NOTEBOOK_EXPLAINED.md` for detailed analysis
+   - `TASKS_AWS_DEPLOYMENT.md` for implementation plan
+   - `TASKS_REACT_FRONTEND.md` for frontend development
 
 ---
 
@@ -169,7 +169,7 @@ This folder contains comprehensive presentation materials for executive briefing
 
 ### Prerequisites
 - AWS account with SageMaker access
-- Jupyter notebook from parent directory (`../multi_asset_hedging_sagemaker.ipynb`)
+- Jupyter notebook from Documents directory (`multi_asset_hedging_sagemaker.ipynb`)
 - Sample data or synthetic data generator
 - Bedrock access (for Claude integration)
 
@@ -319,11 +319,11 @@ Full 45-minute presentation + 15-minute extended Q&A
 
 ## Additional Resources
 
-### Parent Directory Files
-- `../NOTEBOOK_EXPLAINED.md` - Comprehensive technical analysis
-- `../multi_asset_hedging_sagemaker.ipynb` - Interactive demo
-- `../TASKS_AWS_DEPLOYMENT.md` - AWS infrastructure tasks
-- `../TASKS_REACT_FRONTEND.md` - Web interface tasks
+### Documents Directory Files
+- `NOTEBOOK_EXPLAINED.md` - Comprehensive technical analysis
+- `multi_asset_hedging_sagemaker.ipynb` - Interactive demo
+- `TASKS_AWS_DEPLOYMENT.md` - AWS infrastructure tasks
+- `TASKS_REACT_FRONTEND.md` - Web interface tasks
 
 ### External References
 - Numerix Documentation: https://numerix.com/documentation

@@ -705,4 +705,71 @@ subject to:
 - Token Usage: ~50K tokens per optimization run
 - Estimated Cost: $0.75-1.50 per analysis
 
+---
+
+## 12. Security & Compliance
+
+### Enterprise-Grade Security Requirements
+
+This platform implements **SOC2 Type II** certification requirements and **NY DFS Cybersecurity Regulation (23 NYCRR 500)** compliance for financial institutions.
+
+**Critical Security Controls**:
+- **Data Encryption**: AES-256 at rest (S3, EBS), TLS 1.3 in transit
+- **Access Control**: MFA enforcement, 14+ char passwords, 90-day rotation
+- **Audit Logging**: 7-year retention (CloudTrail, VPC Flow Logs, CloudWatch)
+- **Disaster Recovery**: RTO < 4 hours, RPO < 1 hour
+- **Network Security**: WAF (OWASP Top 10), AWS Shield, private VPC
+- **Vulnerability Management**: Continuous scanning, penetration testing
+
+**Compliance Framework**:
+- **SOC2 Type II**: Complete Trust Service Criteria (CC1-CC9)
+- **NY DFS 23 NYCRR 500**: CISO designation, 72-hour breach notification, annual certification
+- **GDPR/CCPA**: Data privacy and subject rights
+- **GLBA**: Financial privacy requirements
+- **SEC/FINRA**: Recordkeeping and data retention
+
+**Pre-Deployment Requirements**:
+
+Before deploying this notebook to production, **Phase 0 (SOC2 Foundation)** must be completed:
+
+1. **Run Compliance Checker**:
+   ```bash
+   python3 utils/soc2_compliance_checker.py --profile <aws-profile> --account <account-id>
+   ```
+
+2. **Verify Controls**:
+   - CloudTrail enabled in all regions with log file validation
+   - AWS Config recording all resources
+   - GuardDuty threat detection enabled
+   - Security Hub with CIS benchmark enabled
+   - IAM password policy meets requirements
+   - Root account MFA enabled
+   - S3 Block Public Access enabled
+   - EBS default encryption enabled
+   - KMS key rotation enabled
+   - CloudWatch Logs 7-year retention
+
+3. **Review Documentation**:
+   - `Documents/SOC2_COMPLIANCE_REQUIREMENTS.md` - Complete SOC2 framework
+   - `Documents/NYDFS_COMPLIANCE_REQUIREMENTS.md` - NY DFS regulation mapping
+   - `Documents/TASKS_AWS_DEPLOYMENT.md` - Phase 0 deployment checklist
+
+**Security Best Practices**:
+- Never commit AWS credentials to git repositories
+- Use AWS Secrets Manager for all credentials
+- Implement least-privilege IAM policies
+- Enable MFA for all privileged accounts
+- Conduct regular security audits and penetration testing
+- Maintain audit trail for all compliance activities
+
+**Cost Impact**:
+- SOC2 Compliance: $60K-$108K annually
+- NY DFS Compliance: $80K-$160K annually (incremental)
+- Most technical controls overlap, minimizing infrastructure costs
+
+📄 **Compliance Documentation**:
+- [SOC2 Compliance Requirements](SOC2_COMPLIANCE_REQUIREMENTS.md)
+- [NY DFS Cybersecurity Requirements](NYDFS_COMPLIANCE_REQUIREMENTS.md)
+- [AWS Deployment Tasks - Phase 0](TASKS_AWS_DEPLOYMENT.md)
+
 **Total Infrastructure Cost**: <$10 per optimization cycle (compare to $5K+ analyst time equivalent)

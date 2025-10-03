@@ -2,9 +2,13 @@
 
 > **Transforming financial analytics through intelligent agent orchestration with the Numerix SDK**
 
+![Agentic AI Architecture](Documents/agentic_architecture_highlevel.png)
+
+**Workflow:** Portfolio managers submit optimization requests through a React frontend, triggering a sophisticated multi-agent orchestration system powered by Strands Agents. Specialized AI agents (Portfolio Risk Manager, FX Specialist, Interest Rate Strategist, Credit Analyst) collaborate through AWS Bedrock AgentCore, leveraging Claude 3.5 Sonnet for intelligent decision-making. These agents invoke custom action groups that call Numerix SDK analytics (CrossAsset pricing, Economic Scenario Generator, XVA calculations) to evaluate strategies across thousands of market scenarios. SageMaker distributes the computational workload across multiple instances, processing results in parallel, while S3 and DynamoDB persist data and agent state. The entire workflow—from strategy submission to comprehensive analysis with visualizations—completes in minutes rather than the weeks required for manual analysis, enabling portfolio managers to discover optimal allocation strategies that maintain robustness across varying market conditions.
+
 ## 🚀 Overview
 
-AgenticNumerix showcases the extraordinary potential of combining **Numerix's world-class financial analytics platform** with cutting-edge **agentic AI systems**. This repository demonstrates how autonomous AI agents can leverage Numerix's comprehensive suite of pricing models, risk analytics, and scenario generation capabilities to solve complex financial challenges across trading, risk management, asset management, and corporate treasury operations.
+AgenticNumerix demonstrates the integration of **Numerix's financial analytics platform** with **agentic AI systems**. This repository shows how autonomous AI agents can leverage Numerix's suite of pricing models, risk analytics, and scenario generation capabilities to solve complex financial challenges across trading, risk management, asset management, and corporate treasury operations.
 
 ## 🌟 Why Numerix + Agentic AI?
 
@@ -50,6 +54,16 @@ AgenticNumerix showcases the extraordinary potential of combining **Numerix's wo
 - **[Counterparty Contagion Analysis](./28-CounterpartyContagionNetworkAnalysis.md)** - Credit contagion modeling across 500+ counterparty networks
 
 ## 🛠️ Technical Architecture
+
+### High-Level Architecture
+![Agentic AI Architecture](Documents/agentic_architecture_highlevel.png)
+
+The platform combines three key technologies in a layered architecture:
+
+1. **🟢 Strands Agents** - Multi-agent orchestration with specialized personas (Portfolio Manager, FX Specialist, IR Strategist, Credit Analyst)
+2. **🟡 AWS Bedrock AgentCore** - AI decision intelligence powered by Claude 3.5 Sonnet with custom action groups
+3. **🔵 Numerix SDK** - Institutional-grade financial analytics (CrossAsset, Economic Scenario Generator, XVA Engine)
+4. **🔴 AWS Infrastructure** - Scalable cloud compute (SageMaker, Lambda) and storage (S3, DynamoDB)
 
 ### Agent Framework Integration
 ```python
@@ -166,12 +180,28 @@ For financial institutions operating in New York State:
 
 6. **Adapt for Your Organization** - Use the provided patterns to build SOC2-compliant agentic workflows
 
-## 📊 Data & Analytics
+## 📊 Resources & Documentation
 
-The repository includes:
+### Presentation Materials
+Comprehensive materials for executive briefings, investment committees, and technical deep dives:
+
+- **[Executive Summary](Documents/Presentation/EXECUTIVE_SUMMARY.md)** - High-level business value overview for C-Suite and board members. Includes ROI analysis ($15M+ annual value creation), strategic implications, and competitive differentiation. (~15 pages, 30-minute read)
+
+- **[Technical Architecture](Documents/Presentation/TECHNICAL_ARCHITECTURE.md)** - Detailed system architecture with ASCII diagrams, data flow sequences, and infrastructure specifications. Covers three-layer intelligence (Numerix → Agents → Claude), scalability characteristics, and disaster recovery. For CTOs and technology leaders. (~20 pages, 45-minute read)
+
+- **[ROI Calculation](Documents/Presentation/ROI_CALCULATION.md)** - Comprehensive financial analysis with conservative, realistic, and aggressive scenarios. Demonstrates 15:1 to 75:1 ROI depending on portfolio size, with complete value creation breakdown across performance, risk mitigation, and operational efficiency. For CFOs and investment committees. (~25 pages, 60-minute read)
+
+- **[Presentation Outline](Documents/Presentation/PRESENTATION_OUTLINE.md)** - Slide-by-slide guide with speaker notes, demo flow, and Q&A preparation. Includes 45-minute presentation structure, live demo script, and customization guidance for different audiences. For presenters and internal teams. (~30 pages)
+
+### Technical Documentation
+- **[Notebook Explained](Documents/NOTEBOOK_EXPLAINED.md)** - Comprehensive technical analysis of the dynamic asset allocation notebook, including architecture, algorithms, and implementation details
+- **[AWS Deployment Tasks](Documents/TASKS_AWS_DEPLOYMENT.md)** - Complete infrastructure deployment checklist with Phase 0 (SOC2 Foundation) requirements
+- **[React Frontend Tasks](Documents/TASKS_REACT_FRONTEND.md)** - Web interface implementation guide with Redux state management and component architecture
+
+### Data & Use Cases
 - **[Complete Use Case Catalog](./NumerixUseCases.csv)** - 42 detailed scenarios across trading, risk, and asset management
+- **[Interactive Jupyter Notebook](multi_asset_hedging_sagemaker.ipynb)** - Live demonstration of hyperparameter optimization with agentic AI
 - **Configuration Files** - Sample Numerix configuration for cloud deployment
-- **Implementation Guides** - Step-by-step technical documentation
 
 ## 🤝 Contributing
 
@@ -190,6 +220,6 @@ We welcome contributions that showcase innovative applications of Numerix analyt
 
 ---
 
-*"The future of financial analytics is autonomous, intelligent, and powered by the extraordinary capabilities of the Numerix platform. AgenticNumerix shows you how to build that future today."*
+*"The future of financial analytics is autonomous, intelligent, and powered by the capabilities of the Numerix platform. AgenticNumerix shows you how to build that future today."*
 
-**Transform your financial analytics. Deploy intelligent agents. Unlock extraordinary insights.**
+**Transform your financial analytics. Deploy intelligent agents. Unlock new insights.**
