@@ -19,6 +19,39 @@ python3 utils/architecture_diagram.py
 pip install diagrams
 ```
 
+### `soc2_compliance_checker.py`
+Validates AWS account meets SOC2 Type II compliance requirements before deployment.
+
+**Usage:**
+```bash
+python3 utils/soc2_compliance_checker.py --profile <aws-profile> --account <account-id>
+```
+
+**Checks Performed:**
+- CloudTrail enabled with log file validation
+- AWS Config recording all resources
+- GuardDuty threat detection enabled
+- Security Hub with CIS benchmark
+- IAM password policy (14+ chars, complexity, 90-day rotation)
+- Root account MFA enabled
+- S3 Block Public Access enabled
+- EBS default encryption enabled
+- KMS key rotation enabled
+- CloudWatch Logs 7-year retention
+
+**Output:**
+- Console report with ✅/❌ status
+- `soc2_compliance_report.json` - Detailed findings
+
+**Dependencies:**
+```bash
+pip install boto3
+```
+
+**Exit Codes:**
+- `0` - All checks passed
+- `1` - One or more checks failed
+
 ## Adding New Scripts
 
 Place all utility scripts in this directory following these guidelines:

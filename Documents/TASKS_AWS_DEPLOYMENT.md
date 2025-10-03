@@ -3,6 +3,88 @@
 ## Overview
 Deploy the dynamic asset allocation optimization system to AWS using Lambda, SageMaker, Bedrock AgentCore, and supporting services for production-grade scalability and reliability.
 
+**⚠️ IMPORTANT: SOC2 COMPLIANCE REQUIRED**
+All infrastructure must meet SOC2 Type II compliance requirements before production deployment. See `Documents/SOC2_COMPLIANCE_REQUIREMENTS.md` for complete controls.
+
+## Phase 0: SOC2 Compliance Foundation (MANDATORY)
+
+### Account Setup and Governance
+- [ ] **AWS Organizations Configuration**
+  - Create separate AWS accounts for dev/staging/prod/security/audit
+  - Configure Organization Units (OUs) with Service Control Policies (SCPs)
+  - Enable consolidated billing
+  - Set up cross-account roles with MFA enforcement
+
+- [ ] **Security Baseline**
+  - Enable AWS CloudTrail in all regions with log file validation
+  - Configure CloudTrail to deliver logs to centralized S3 bucket
+  - Enable AWS Config with required configuration rules
+  - Enable AWS Security Hub with CIS AWS Foundations Benchmark
+  - Enable AWS GuardDuty in all regions
+  - Enable IAM Access Analyzer
+  - Enable AWS Macie for PII detection
+
+- [ ] **Identity and Access Management**
+  - Configure IAM password policy (14+ chars, complexity, 90-day rotation)
+  - Enable MFA for all IAM users
+  - Delete root account access keys
+  - Enable MFA for root account
+  - Configure AWS SSO for centralized access
+  - Document least-privilege IAM policies
+
+- [ ] **Encryption and Key Management**
+  - Create customer-managed KMS keys for each environment
+  - Configure automatic annual key rotation
+  - Document key policies with separation of duties
+  - Enable S3 Block Public Access account-wide
+  - Enable default EBS encryption
+
+- [ ] **Logging and Monitoring**
+  - Set CloudWatch Logs retention to 7 years
+  - Enable VPC Flow Logs for all VPCs
+  - Configure S3 access logging for all buckets
+  - Enable CloudTrail Insights for anomaly detection
+  - Create SNS topics for security alerts
+  - Configure EventBridge rules for compliance events
+
+- [ ] **Backup and Disaster Recovery**
+  - Configure AWS Backup policies
+  - Enable cross-region S3 replication for critical buckets
+  - Enable DynamoDB point-in-time recovery
+  - Document RTO (< 4 hours) and RPO (< 1 hour) requirements
+  - Schedule quarterly DR failover tests
+
+- [ ] **Network Security**
+  - Plan VPC architecture with public/private/isolated subnets
+  - Document security group rules with least-privilege
+  - Enable VPC Flow Logs
+  - Configure AWS WAF rules for API Gateway
+  - Plan AWS PrivateLink endpoints for AWS services
+
+- [ ] **Compliance Automation**
+  - Configure Security Hub automated compliance checks
+  - Set up Config Rules for SOC2 controls
+  - Create CloudWatch Alarms for compliance violations
+  - Document incident response procedures
+  - Create runbooks for common security incidents
+
+- [ ] **Audit Evidence Collection**
+  - Configure automated evidence collection
+  - Set up quarterly access review process
+  - Document change management procedures
+  - Create security awareness training program
+  - Schedule SOC2 Type II audit kickoff
+
+### Cost Estimate for SOC2 Compliance
+**Monthly: ~$5,000-9,000**
+- CloudTrail, Config, GuardDuty, Security Hub, Inspector, Macie
+- CloudWatch Logs (7-year retention)
+- KMS, Backup, Multi-region replication
+
+**Annual: ~$60,000-108,000**
+- Monthly services: $60K-$108K
+- External SOC2 auditor: $30K-$60K
+
 ## Phase 1: Infrastructure as Code Setup
 
 ### Terraform/CloudFormation Configuration
