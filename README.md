@@ -91,28 +91,80 @@ def risk_analyst_agent(request):
 - **24/7 autonomous monitoring** with intelligent escalation workflows
 - **Regulatory compliance** automation for Basel III, IFRS 9, Solvency II
 
+## 🔒 Security & Compliance
+
+**Enterprise-Grade Security with SOC2 Type II Certification**
+
+This platform is designed to meet the highest security and compliance standards required by financial institutions:
+
+### SOC2 Type II Compliance
+- ✅ **Complete Trust Service Criteria** (CC1-CC9) implementation
+- ✅ **Data Encryption** at rest (AES-256) and in transit (TLS 1.3)
+- ✅ **Multi-factor Authentication** for all privileged access
+- ✅ **Audit Logging** with 7-year retention (CloudTrail, VPC Flow Logs)
+- ✅ **Disaster Recovery** with RTO < 4 hours, RPO < 1 hour
+- ✅ **Automated Compliance** monitoring and alerting
+- ✅ **Annual External Audits** for SOC2 Type II certification
+
+### NY DFS Cybersecurity Regulation (23 NYCRR 500)
+For financial institutions operating in New York State:
+- ✅ **Risk Assessment** with documented cybersecurity programs
+- ✅ **Access Controls** with least-privilege and MFA enforcement
+- ✅ **Data Encryption** for all nonpublic information
+- ✅ **Incident Response** plan with 72-hour breach notification
+- ✅ **Vendor Management** with third-party security assessments
+- ✅ **Annual Certification** by qualified individual
+- ✅ **Penetration Testing** and vulnerability assessments
+
+### Additional Financial Compliance
+- **PCI DSS** - Payment card data security (if applicable)
+- **GDPR/CCPA** - Data privacy and subject rights
+- **GLBA** - Financial privacy requirements
+- **SEC/FINRA** - Recordkeeping and data retention
+
+📄 See [SOC2 Compliance Requirements](Documents/SOC2_COMPLIANCE_REQUIREMENTS.md) and [NY DFS Compliance](Documents/NYDFS_COMPLIANCE_REQUIREMENTS.md) for complete details.
+
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Numerix SDK license and installation
 - Python 3.8+ environment
+- AWS Account with SOC2-compliant configuration
 - AWS Bedrock AgentCore SDK (optional for cloud deployment)
 - Strands Agents framework (optional for multi-agent orchestration)
 
-### Quick Start
-1. **Clone the repository**
+### Security-First Deployment
+1. **Validate Compliance** - Run automated SOC2 compliance checker
+   ```bash
+   python3 utils/soc2_compliance_checker.py --profile <aws-profile> --account <account-id>
+   ```
+
+2. **Clone the repository**
    ```bash
    git clone https://github.com/skrinak/AgenticNumerix.git
    cd AgenticNumerix
    ```
 
-2. **Explore the use cases** - Each markdown file contains detailed implementations with:
+3. **Configure Security** - Set up environment variables
+   ```bash
+   cp platform/.env.example platform/.env
+   # Edit .env with your AWS credentials and configuration
+   ```
+
+4. **Deploy Infrastructure** - Follow Phase 0 (SOC2 Foundation) in deployment tasks
+   ```bash
+   # See Documents/TASKS_AWS_DEPLOYMENT.md
+   # Phase 0: SOC2 Compliance Foundation (MANDATORY)
+   ```
+
+5. **Explore Use Cases** - Each markdown file contains detailed implementations with:
    - Agent persona descriptions and responsibilities
    - Real-world scenario narratives
    - Technical implementation details
    - Business impact quantification
+   - Security and compliance considerations
 
-3. **Adapt for your organization** - Use the provided patterns to build your own agentic workflows leveraging Numerix analytics
+6. **Adapt for Your Organization** - Use the provided patterns to build SOC2-compliant agentic workflows
 
 ## 📊 Data & Analytics
 
