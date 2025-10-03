@@ -25,29 +25,29 @@ AgenticNumerix demonstrates the integration of **Numerix's financial analytics p
 ## 💡 Featured Use Cases
 
 ### 🏛️ Multi-Agent Trading & Structuring
-- **[Exotic Options Structuring Syndicate](./03-ExoticOptionsStructuringSyndicate.md)** - AI agents designing bespoke barrier options with real-time pricing via Numerix CrossAsset
-- **[Multi-Asset Hedging Orchestra](./04-MultiAssetHedgingOrchestra.md)** - Coordinated FX, rates, and credit hedging for complex liability structures
-- **[Convertible Bond Arbitrage Team](./06-ConvertibleBondArbitrageTeam.md)** - Systematic convertible screening and delta-hedging optimization
+- **[Exotic Options Structuring Syndicate](./Roadmap/03-ExoticOptionsStructuringSyndicate.md)** - AI agents designing bespoke barrier options with real-time pricing via Numerix CrossAsset
+- **[Multi-Asset Hedging Orchestra](./Roadmap/04-MultiAssetHedgingOrchestra.md)** - Coordinated FX, rates, and credit hedging for complex liability structures
+- **[Convertible Bond Arbitrage Team](./Roadmap/06-ConvertibleBondArbitrageTeam.md)** - Systematic convertible screening and delta-hedging optimization
 
 ### 🛡️ Multi-Agent Risk Management
-- **[Real-Time Risk Surveillance Network](./08-Real-TimeRiskSurveillanceNetwork.md)** - Continuous monitoring of 10,000+ positions with sub-second VaR updates
-- **[Climate Risk Scenario Planning](./09-ClimateRiskScenarioPlanningConsortium.md)** - 100+ climate scenarios across 25-year horizons for structured credit portfolios
-- **[Dynamic XVA Optimization Squad](./10-DynamicXVAOptimizationSquad.md)** - Real-time CVA, FVA, and capital optimization across 20,000+ derivatives
+- **[Real-Time Risk Surveillance Network](./Roadmap/08-Real-TimeRiskSurveillanceNetwork.md)** - Continuous monitoring of 10,000+ positions with sub-second VaR updates
+- **[Climate Risk Scenario Planning](./Roadmap/09-ClimateRiskScenarioPlanningConsortium.md)** - 100+ climate scenarios across 25-year horizons for structured credit portfolios
+- **[Dynamic XVA Optimization Squad](./Roadmap/10-DynamicXVAOptimizationSquad.md)** - Real-time CVA, FVA, and capital optimization across 20,000+ derivatives
 
 ### 📊 Multi-Agent Asset Management
-- **[Structured Products Innovation Lab](./11-Structured%20Products%20Innovation%20Lab.md)** - Automated design and testing of 75+ autocallable variations
-- **[Alternative Risk Premia Harvesting](./13-AlternativeRiskPremiaHarvestingCollective.md)** - Systematic capture of risk premia across 200+ signals
-- **[Multi-Manager Fixed Income Engine](./12-Multi-ManagerFixedIncomeAllocationEngine.md)** - Optimized allocation across 25 managers and 500+ securities
+- **[Structured Products Innovation Lab](./Roadmap/11-Structured%20Products%20Innovation%20Lab.md)** - Automated design and testing of 75+ autocallable variations
+- **[Alternative Risk Premia Harvesting](./Roadmap/13-AlternativeRiskPremiaHarvestingCollective.md)** - Systematic capture of risk premia across 200+ signals
+- **[Multi-Manager Fixed Income Engine](./Roadmap/12-Multi-ManagerFixedIncomeAllocationEngine.md)** - Optimized allocation across 25 managers and 500+ securities
 
 ### 🏢 Corporate Treasury & Regulatory
-- **[Corporate Treasury Optimization](./16-CorporateTreasuryOptimizationCommand.md)** - Multinational FX hedging and funding cost optimization
-- **[Basel III Capital Optimization](./32-BaselIIICapitalRatioOptimizationEngine.md)** - Trading book capital efficiency through portfolio construction
-- **[Solvency II SCR Laboratory](./34-SolvencyIISolvencyCapitalRequirementLaboratory.md)** - Insurance capital requirement calculation across 300+ scenarios
+- **[Corporate Treasury Optimization](./Roadmap/16-CorporateTreasuryOptimizationCommand.md)** - Multinational FX hedging and funding cost optimization
+- **[Basel III Capital Optimization](./Roadmap/32-BaselIIICapitalRatioOptimizationEngine.md)** - Trading book capital efficiency through portfolio construction
+- **[Solvency II SCR Laboratory](./Roadmap/34-SolvencyIISolvencyCapitalRequirementLaboratory.md)** - Insurance capital requirement calculation across 300+ scenarios
 
 ### ⚡ Cloud-Scale Stress Testing
-- **[Global Macro Storm Testing](./20-GlobalMacroScenarioStormTesting.md)** - 500+ macroeconomic scenarios for multi-billion dollar pension funds
-- **[Volatility Regime Laboratory](./24-VolatilityRegimeShiftLaboratory.md)** - Options portfolio testing across 300+ volatility surface scenarios
-- **[Counterparty Contagion Analysis](./28-CounterpartyContagionNetworkAnalysis.md)** - Credit contagion modeling across 500+ counterparty networks
+- **[Global Macro Storm Testing](./Roadmap/20-GlobalMacroScenarioStormTesting.md)** - 500+ macroeconomic scenarios for multi-billion dollar pension funds
+- **[Volatility Regime Laboratory](./Roadmap/24-VolatilityRegimeShiftLaboratory.md)** - Options portfolio testing across 300+ volatility surface scenarios
+- **[Counterparty Contagion Analysis](./Roadmap/28-CounterpartyContagionNetworkAnalysis.md)** - Credit contagion modeling across 500+ counterparty networks
 
 ## 🛠️ Technical Architecture
 
