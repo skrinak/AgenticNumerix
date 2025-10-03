@@ -2,10 +2,6 @@
 
 > **Transforming financial analytics through intelligent agent orchestration with the Numerix SDK**
 
-![Agentic AI Architecture](Documents/agentic_architecture_highlevel.png)
-
-**Workflow:** Portfolio managers submit optimization requests through a React frontend, triggering a sophisticated multi-agent orchestration system powered by Strands Agents. Specialized AI agents (Portfolio Risk Manager, FX Specialist, Interest Rate Strategist, Credit Analyst) collaborate through AWS Bedrock AgentCore, leveraging Claude 3.5 Sonnet for intelligent decision-making. These agents invoke custom action groups that call Numerix SDK analytics (CrossAsset pricing, Economic Scenario Generator, XVA calculations) to evaluate strategies across thousands of market scenarios. SageMaker distributes the computational workload across multiple instances, processing results in parallel, while S3 and DynamoDB persist data and agent state. The entire workflow—from strategy submission to comprehensive analysis with visualizations—completes in minutes rather than the weeks required for manual analysis, enabling portfolio managers to discover optimal allocation strategies that maintain robustness across varying market conditions.
-
 ## 🚀 Overview
 
 AgenticNumerix demonstrates the integration of **Numerix's financial analytics platform** with **agentic AI systems**. This repository shows how autonomous AI agents can leverage Numerix's suite of pricing models, risk analytics, and scenario generation capabilities to solve complex financial challenges across trading, risk management, asset management, and corporate treasury operations.
@@ -55,8 +51,11 @@ AgenticNumerix demonstrates the integration of **Numerix's financial analytics p
 
 ## 🛠️ Technical Architecture
 
-### High-Level Architecture
-![Agentic AI Architecture](Documents/agentic_architecture_highlevel.png)
+**Workflow:** Portfolio managers submit optimization requests through a React frontend, triggering a sophisticated multi-agent orchestration system powered by Strands Agents. Specialized AI agents (Portfolio Risk Manager, FX Specialist, Interest Rate Strategist, Credit Analyst) collaborate through AWS Bedrock AgentCore, leveraging Claude 3.5 Sonnet for intelligent decision-making. These agents invoke custom action groups that call Numerix SDK analytics (CrossAsset pricing, Economic Scenario Generator, XVA calculations) to evaluate strategies across thousands of market scenarios. SageMaker distributes the computational workload across multiple instances, processing results in parallel, while S3 and DynamoDB persist data and agent state. The entire workflow—from strategy submission to comprehensive analysis with visualizations—completes in minutes rather than the weeks required for manual analysis, enabling portfolio managers to discover optimal allocation strategies that maintain robustness across varying market conditions.
+
+## Agentic AI Architecture
+
+<img src="Documents/agentic_architecture_highlevel.png" width="60%" border=1/>
 
 The platform combines three key technologies in a layered architecture:
 
@@ -64,6 +63,8 @@ The platform combines three key technologies in a layered architecture:
 2. **🟡 AWS Bedrock AgentCore** - AI decision intelligence powered by Claude 3.5 Sonnet with custom action groups
 3. **🔵 Numerix SDK** - Institutional-grade financial analytics (CrossAsset, Economic Scenario Generator, XVA Engine)
 4. **🔴 AWS Infrastructure** - Scalable cloud compute (SageMaker, Lambda) and storage (S3, DynamoDB)
+
+### Click to view: [Detailed Technical Architecture](Documents/numerix_aws_architecture.png)
 
 ### Agent Framework Integration
 ```python
