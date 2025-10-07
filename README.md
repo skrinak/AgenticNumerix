@@ -1,17 +1,17 @@
 # AgenticNumerix: AI-Powered Financial Risk Analytics
 
-> **Transforming financial analytics through intelligent agent orchestration with the Numerix SDK**
+> **Transforming financial analytics through intelligent agent orchestration with the Numerix CrossAsset SDK**
 
 ## 🚀 Overview
 
-AgenticNumerix demonstrates the integration of **Numerix's financial analytics platform** with **agentic AI systems**. This repository shows how autonomous AI agents can leverage Numerix's suite of pricing models, risk analytics, and scenario generation capabilities to solve complex financial challenges across trading, risk management, asset management, and corporate treasury operations.
+AgenticNumerix demonstrates the integration of **Numerix's financial analytics library** with **agentic AI systems**. This repository shows how autonomous AI agents can leverage Numerix's suite of cross-asset quantitative models and advanced Monte Carlo framework for simulation and scenario generation to solve complex financial challenges across trading, risk management, asset management, and corporate treasury operations.
 
 ## 🌟 Why Numerix + Agentic AI?
 
 ### The Numerix Advantage
-- **40+ years** of quantitative finance innovation
-- **2,000+ mathematical models** for derivatives pricing and risk analytics
-- **Real-time cross-asset analytics** across equities, fixed income, FX, commodities, and credit
+- **30 years** of quantitative finance innovation
+- **Market-leading quantitative models** for derivatives pricing and risk analytics
+- **Real-time cross-asset analytics** across equities, interest rate and fixed income, FX, crypto, commodities, and credit
 - **Enterprise-grade architecture** trusted by the world's leading financial institutions
 - **Regulatory compliance** with Basel III, IFRS 9, Solvency II, and other frameworks
 
@@ -25,8 +25,8 @@ AgenticNumerix demonstrates the integration of **Numerix's financial analytics p
 ## 💡 Featured Use Cases
 
 ### 🏛️ Multi-Agent Trading & Structuring
-- **[Exotic Options Structuring Syndicate](./Roadmap/03-ExoticOptionsStructuringSyndicate.md)** - AI agents designing bespoke barrier options with real-time pricing via Numerix CrossAsset
-- **[Multi-Asset Hedging Orchestra](./Roadmap/04-MultiAssetHedgingOrchestra.md)** - Coordinated FX, rates, and credit hedging for complex liability structures
+- **[Exotic Options Structuring Syndicate](./Roadmap/03-ExoticOptionsStructuringSyndicate.md)** - AI agents designing bespoke Worst of Auto Callable with real-time pricing via Numerix CrossAsset
+- **[Multi-Asset Hedging Orchestra](./Roadmap/04-MultiAssetHedgingOrchestra.md)** - Coordinated Equities, FX, rates, and credit hedging for complex liability structures
 - **[Convertible Bond Arbitrage Team](./Roadmap/06-ConvertibleBondArbitrageTeam.md)** - Systematic convertible screening and delta-hedging optimization
 
 ### 🛡️ Multi-Agent Risk Management
@@ -51,7 +51,7 @@ AgenticNumerix demonstrates the integration of **Numerix's financial analytics p
 
 ## 🛠️ Technical Architecture
 
-**Workflow:** Portfolio managers submit optimization requests through a React frontend, triggering a sophisticated multi-agent orchestration system powered by Strands Agents. Specialized AI agents (Portfolio Risk Manager, FX Specialist, Interest Rate Strategist, Credit Analyst) collaborate through AWS Bedrock AgentCore, leveraging Claude 3.5 Sonnet for intelligent decision-making. These agents invoke custom action groups that call Numerix SDK analytics (CrossAsset pricing, Economic Scenario Generator, XVA calculations) to evaluate strategies across thousands of market scenarios. SageMaker distributes the computational workload across multiple instances, processing results in parallel, while S3 and DynamoDB persist data and agent state. The entire workflow—from strategy submission to comprehensive analysis with visualizations—completes in minutes rather than the weeks required for manual analysis, enabling portfolio managers to discover optimal allocation strategies that maintain robustness across varying market conditions.
+**Workflow:** Portfolio managers submit optimization requests through a React frontend, triggering a sophisticated multi-agent orchestration system powered by Strands Agents. Specialized AI agents (Portfolio Risk Manager, FX Specialist, Interest Rate Strategist, Credit Analyst) collaborate through AWS Bedrock AgentCore, leveraging Claude 3.5 Sonnet for intelligent decision-making. These agents invoke custom action groups that call Numerix analytics SDK (CrossAsset pricing, Economic Scenario Generator, XVA calculations) to evaluate strategies across thousands of market scenarios. SageMaker distributes the computational workload across multiple instances, processing results in parallel, while S3 and DynamoDB persist data and agent state. The entire workflow—from strategy submission to comprehensive analysis with visualizations—completes in minutes rather than the weeks required for manual analysis, enabling portfolio managers to discover optimal allocation strategies that maintain robustness across varying market conditions.
 
 ## Agentic AI Architecture
 
@@ -84,11 +84,11 @@ def risk_analyst_agent(request):
     return scenario_results
 ```
 
-### Numerix SDK Capabilities
+### Numerix Analytics Capabilities
 - **CrossAsset**: Unified pricing and risk analytics across all asset classes
-- **Economic Scenario Generator**: Forward-looking scenario modeling for stress testing
+- **Economic Scenario Generator**: Forward-looking scenario modeling for stress testing and risk management.
 - **PolyPaths**: Advanced fixed income and structured product analytics
-- **Kynex**: Convertible bond and equity-linked derivatives analytics
+- **Kynex**: Convertible bond analytics
 - **XVA**: Comprehensive valuation adjustments and regulatory capital
 
 ## 📈 Business Impact
@@ -102,7 +102,7 @@ def risk_analyst_agent(request):
 
 ### Operational Excellence
 - **Sub-second risk updates** across 10,000+ position portfolios
-- **Real-time pricing** of 50+ barrier option variations simultaneously
+- **Real-time pricing** of 50+ worst of auto callable variations simultaneously
 - **24/7 autonomous monitoring** with intelligent escalation workflows
 - **Regulatory compliance** automation for Basel III, IFRS 9, Solvency II
 
@@ -215,7 +215,7 @@ We welcome contributions that showcase innovative applications of Numerix analyt
 ## 📞 Connect
 
 **Interested in building agentic AI solutions with Numerix?**
-- Explore [Numerix's analytics platform](https://numerix.com)
+- Explore [Numerix's analytics library](https://numerix.com)
 - Learn about [AWS Bedrock AgentCore](https://aws.amazon.com/bedrock/agents/)
 - Discover [Strands multi-agent framework](https://strands.ai)
 
